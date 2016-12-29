@@ -6,10 +6,7 @@ from tap_parser import *
 
 if __name__ == "__main__":
     try:
-        #input = open(sys.argv[1],'r')
-        #output_file = sys.argv[2]
-
-        ##FOR DBG##
+       
         input = open("tap_dbg",'r')
         output_file = "xml_dbg"
 
