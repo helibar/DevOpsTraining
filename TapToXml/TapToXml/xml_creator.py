@@ -70,12 +70,13 @@ def write_xml(xml_input, xml_name):
     try:
         name=name+"."+extension
         if os.path.exists(name):
-            print(name + " file already exist.")
-            sys.exit(0)
-        file=open(name,'a')
-        file.write(xml_input)
-        file.close()
-        print(name + " file has been created!")
+            print(name + " file already exist. Please run with different name.")
+        else:
+            file=open(name,'a')
+            file.write(xml_input)
+            file.close()
+            print(name + " file has been created!")
     except:
-            print("error occured.")
-            sys.exit(0)
+            e = sys.exc_info()
+            print("error occured: ",e)
+            sys.exit()

@@ -17,17 +17,17 @@ from tap_parser import *
 
 if __name__ == "__main__":
     try:
-        input = open(sys.argv[1],'r')
-        output_file = sys.argv[2]
+        tap_file = open(sys.argv[1],'r')
+        xml_output_file = sys.argv[2]
 
-        ##FOR DBG##
-        #input = open("tap_dbg",'r')
-        #output_file = "xml_dbg"
+        tp = TAP13()
+        tp.parse(tap_file)
+        generate_xml(tp, xml_output_file)
 
     except IndexError:
         print ("Missing TAP or xml file input arguments.")
         sys.exit()
+    except FileNotFoundError:
+        print("Wrong TAP file or file path")
 
-    tp = TAP13()
-    tp.parse(input)
-    generate_xml(tp, output_file)
+    

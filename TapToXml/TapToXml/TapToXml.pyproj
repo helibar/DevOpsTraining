@@ -22,6 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="runningnpm.py" />
     <Compile Include="TapToXml.py" />
     <Compile Include="tap_parser.py">
       <SubType>Code</SubType>
