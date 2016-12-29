@@ -61,6 +61,7 @@ def write_xml(xml_input, xml_name):
         name=name+"."+extension
         if os.path.exists(name):
             print(name + " file already exist.")
+            sys.exit(0)
         file=open(name,'a')
         file.write(xml_input)
         file.close()
