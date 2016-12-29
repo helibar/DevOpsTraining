@@ -1,3 +1,13 @@
+"""xml file creator.
+
+Usage:
+    generate_xml(<TAP13_instance>, <xml_file_name>)
+
+Example:
+    generate_xml(tp, output_file)
+
+"""
+
 import pprint
 import os
 from xml.etree.ElementTree import *

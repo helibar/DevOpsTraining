@@ -1,3 +1,14 @@
+"""Tap file parser.
+
+Usage:
+    parse(<tap_file>)
+
+Example:
+    tp=TAP13()
+    tp.parse(<tap_file>)
+
+"""
+
 import re
 from io import StringIO
 
