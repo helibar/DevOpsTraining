@@ -20,6 +20,7 @@ if __name__ == "__main__":
         tap_file = open(sys.argv[1],'r')
         xml_output_file = sys.argv[2]
 
+       
         tp = TAP13()
         tp.parse(tap_file)
         generate_xml(tp, xml_output_file)

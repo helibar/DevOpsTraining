@@ -5,7 +5,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>9268417e-e736-4226-9074-3a0a81515a7c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>TapToXml.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,10 +24,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="runningnpm.py" />
-    <Compile Include="TapToXml.py" />
     <Compile Include="tap_parser.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="tap_to_xml.py" />
     <Compile Include="xml_creator.py">
       <SubType>Code</SubType>
     </Compile>
